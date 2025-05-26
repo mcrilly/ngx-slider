@@ -1,12 +1,29 @@
 # ngx-slider
 [![npm version](https://badge.fury.io/js/%40angular-slider%2Fngx-slider.svg)](https://badge.fury.io/js/%40angular-slider%2Fngx-slider)
-[![Travis CI Build](https://travis-ci.org/angular-slider/ngx-slider.svg?branch=master)](https://travis-ci.org/angular-slider/ngx-slider)
 
 Website: https://angular-slider.github.io/ngx-slider/
 
-Self-contained, mobile friendly slider component for Angular 6+ based on [angularjs-slider](https://github.com/angular-slider/angularjs-slider).
+Discord: https://discord.gg/DHsDghZRwZ
 
-**NOTE:** This component used to be known as ng5-slider before the v2.0.0 release. Starting with v2.0.0, it has been re-branded as ngx-slider, targeting Angular 6+. If you have been using the previous version in your app, please follow the instructions in [UPGRADING.md](UPGRADING.md). If you are sticking with the old version, it will continue to be available in the v1.2.x release line under the old name of ng5-slider. If you are looking for documentation for the old version, it is available as [archived copy on Github](https://raw.githubusercontent.com/angular-slider/ngx-slider/master/archive/ng5-slider-v1.2.6-site-archive.zip).
+
+Self-contained, mobile friendly slider component for Angular based on [angularjs-slider](https://github.com/angular-slider/angularjs-slider).
+
+**NOTE:** As of v19.0.0, this project is not being actively maintained. If you wish to become a maintainer, get in touch on [the dedicated Discord server](https://discord.gg/DHsDghZRwZ).
+
+## Dependencies
+
+| ngx-slider    | Angular     | RxJS        | Actively supported |
+| ------------- | ----------- | ----------- | ------------------ |
+| 2.0.x         | 6.x - 12.x  | 6.x         | No                 |
+| 13.x          | 13.x        | 6.x         | No                 |
+| 14.x          | 14.x        | 6.x         | No                 |
+| 15.x          | 15.x        | 7.x         | No                 |
+| 16.x          | 16.x        | 7.x         | No                 |
+| 17.x          | 17.x        | 7.x         | Yes                |
+| 18.x          | 18.x        | 7.x         | Yes                |
+| 19.x          | 19.x        | 7.x         | Yes                |
+
+*Note:* Like with Angular only the latest 3 versions are actively supported.
 
 ## Demos
 
@@ -36,19 +53,16 @@ Self-contained, mobile friendly slider component for Angular 6+ based on [angula
 
  * [More examples on official website](https://angular-slider.github.io/ngx-slider/demos)
 
-## Dependencies
-
- * Angular 6+
- * rxjs 6+
-
 ## Installation
 
 To add the slider to your Angular project:
+
 ```
 npm install --save @angular-slider/ngx-slider
 ```
 
 Once installed, add the slider to your `app.module.ts`:
+
 ```typescript
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 
@@ -69,6 +83,7 @@ export class AppModule {}
 ## Sample usage
 
 Now you can use the slider component in your app components, for example in `app.component.ts`:
+
 ```typescript
 import { Options } from '@angular-slider/ngx-slider';
 ...
@@ -89,6 +104,7 @@ And in template file `app.component.html`:
 ```
 
 ## Documentation
+
 Full API documentation is available on [official website](https://angular-slider.github.io/ngx-slider/docs).
 
 ## Styling
@@ -102,6 +118,7 @@ As of v1.2.0 the slider features CSS animations of slider movement. If you prefe
 ## Keyboard Shortcuts
 
 In addition to mouse/touch events, the slider can also be controlled through keyboard. The available shortcuts are:
+
  - right/up arrow - increase by single step,
  - left/down arrow - decrease by single step,
  - page up - increase by 10% of slider range,
@@ -134,3 +151,7 @@ If you would like to contribute to the project, see [DEVELOPERS.md](DEVELOPERS.m
 ## License
 
 The project is licensed under the MIT license.
+
+## Upgrading
+
+For instructions on upgrading from previous (1.x) versions of the library, see [UPGRADING.md](UPGRADING.md).

@@ -6,12 +6,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { NgxSliderModule } from '@local/ngx-slider';
 
-import { DocsModule } from './docs/docs.module';
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
 import { HomeComponent } from './home.component';
 import { DemosComponent } from './demos.component';
+import { DocsComponent } from './docs.component';
 import {
   AlphabetSliderComponent,
   CustomCombineLabelsFunctionSliderComponent,
@@ -39,6 +38,7 @@ import {
   LogScaleSliderComponent,
   ManualRefreshSliderComponent,
   NoSwitchingRangeSliderComponent,
+  PreventChangeOnScrollSliderComponent,
   PushRangeSliderComponent,
   RangeSliderComponent,
   ReactiveFormRangeSliderComponent,
@@ -70,6 +70,7 @@ import { routerConfig, routerOptions } from './app-router.config';
     HeaderComponent,
     HomeComponent,
     DemosComponent,
+    DocsComponent,
     AlphabetSliderComponent,
     CustomCombineLabelsFunctionSliderComponent,
     CustomDisplayFunctionSliderComponent,
@@ -96,6 +97,7 @@ import { routerConfig, routerOptions } from './app-router.config';
     LogScaleSliderComponent,
     ManualRefreshSliderComponent,
     NoSwitchingRangeSliderComponent,
+    PreventChangeOnScrollSliderComponent,
     PushRangeSliderComponent,
     RangeSliderComponent,
     ReactiveFormRangeSliderComponent,
@@ -123,12 +125,11 @@ import { routerConfig, routerOptions } from './app-router.config';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    DocsModule,
     RouterModule.forRoot(routerConfig, routerOptions),
-    NgbModule.forRoot(),
-    NgxSliderModule
+    NgbModule,
+    NgxSliderModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

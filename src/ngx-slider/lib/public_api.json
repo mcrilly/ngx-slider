@@ -1,10 +1,12 @@
 {
   "exports": [
     {
-      "what": [
-        "NgxSliderModule"
-      ],
+      "what": ["NgxSliderModule"],
       "file": "./slider.module"
+    },
+    {
+      "what": ["SliderComponent"],
+      "file": "./slider.component"
     },
     {
       "what": "*",

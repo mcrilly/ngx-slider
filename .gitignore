@@ -9,6 +9,7 @@
 
 # dependencies
 /node_modules
+/scripts/scss-bundle-workspace/node_modules
 
 # github pages temporary directory
 /gh-pages
@@ -29,10 +30,8 @@
 #!.vscode/launch.json
 !.vscode/extensions.json
 
-# NVM
-.nvmrc
-
 # misc
+/.angular/cache
 /.sass-cache
 /connect.lock
 /coverage
@@ -45,3 +44,9 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
